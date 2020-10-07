@@ -2,9 +2,9 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-	<title>P2 res</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script src="https://kit.fontawesome.com/de021a79c3.js" crossorigin="anonymous"></script>
+        <title>P2 res</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://kit.fontawesome.com/de021a79c3.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -14,14 +14,18 @@
                 <div class="logo">
                     <img src="logo/Reservia.svg" alt="logo">
                 </div>
-                <div class="nav">
-                    <a class="header-nav" href="#hebergements">Hébergements</a>
-                    <a class="header-nav1" href="#activites">Activités</a>
+                <div class="nav-wrapper">
+                    <div class="nav hide-on-mobile">
+                        <a class="nav-item nav-item-active" href="#hebergements">Hébergements</a>
+                        <a class="nav-item" href="#activites">Activités</a>
+                    </div>
+                        <a class="nav-item registration" href="#inscrire">S'inscrire</a>
+                    </div>
                 </div>
-                <div class="nav1">
-                    <a href="#inscrire">S'inscrire</a>
+                <div class="nav show-on-mobile">
+                    <a class="nav-item nav-item-active" href="#hebergements">Hébergements</a>
+                    <a class="nav-item" href="#activites">Activités</a>
                 </div>
-            </div>
             <!--fin header-->
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ou en peine nature</p>
@@ -31,10 +35,10 @@
                     <div class="child-search">
                         <i class="fas fa-map-marker-alt"></i>
                         <input class="search_form_text_input" type="text" name="research" id="research" placeholder="Marseille, France">
-                        <input type="button" value="recherche" class="button-search">
-                        <button class="search_form_submit_input_2" type="submit">
-                        <i class="fas fa-search"></i>
+                        <input type="button" value="Rechercher" class="button-search"><button class="search_form_submit_input_2" type="submit">
+                            <i class="fas fa-search"></i>
                         </button>
+                        
                         <!--<i class="fas fa-search icone"></i>-->
                     </div>
                 </form>	
@@ -238,7 +242,7 @@
                     <strong>Nos hébergements</strong><br>
                     <p>
                         Charte qualité<br>Soumetttre votre hôtel
-                </p>
+                    </p>
                 </div>
                 <div class="assistance">
                     <strong>Assistance</strong><br>
