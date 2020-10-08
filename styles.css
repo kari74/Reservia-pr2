@@ -49,7 +49,7 @@ body{
 }
 
 h1{
-    font-size: 16px bold;
+    font-size: 16px;
 }
 
 p{
@@ -88,7 +88,7 @@ p{
 }
 .fa-map-marker-alt{
     font-size: x-large;
-    background-color: gray;
+    background-color: lightgray;
 }
 
 .button-search,.imput-search:focus {
@@ -450,8 +450,8 @@ p{
     }
 }
 
-@media all and(max-width:850px)
-{
+@media all and(max-width:850px){
+
     .card{
         width: 40%;
     }
@@ -460,10 +460,15 @@ p{
         text-align: center;        
         width: auto;
     }
+
+    .show-on-mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+
     .filtre{
     
-        width: 100%;
-        
+        width: 100%;   
     }
 
     .option{
@@ -472,15 +477,14 @@ p{
     }
 
     .nav{
-
         width: auto;
     }
+
     .icone{
         display: none;
-    
     }
-
 }
+
 
 @media all and (max-width: 480px){
 
@@ -492,30 +496,29 @@ p{
         justify-content: space-between;
     }
 
-   
     .logo {
         display: flex;
         justify-content: space-between;
     }
+
     .filtre{
         width: auto;
         font-size: 19px;
         flex-wrap: wrap;
         justify-content: flex-start;
         margin: 10px;
-
     }
 
     .icone{
         display: none;
-    
+
     }
+
     .nav{
         width: auto;
         display: flex;
         flex-wrap: wrap;
-        font-size: 18px;
-        
+        font-size: 18px;  
     }
 
     .hide-on-mobile{
@@ -543,16 +546,17 @@ p{
         border-bottom: 3px solid #0065fc;
         color: #0065fc;
     }
-    
 
     h1{
         font-size: 28px;
         margin: 10px;
     }
+
     p{
         font-size: 20px;
         margin: 10px;
     }
+
     .filtre p{
         font-size: 20px;
         margin: 10px;
@@ -574,9 +578,8 @@ p{
     .search .icone{
         visibility: visible;
         display: flex;
-     
-
     }
+
      .button-search{
          display: none;
      }
@@ -596,7 +599,6 @@ p{
         border: solid 1px transparent;
         color: white;
       }  
-
 
     .hebergements-wrapper{
         flex-direction: column;
@@ -643,5 +645,6 @@ p{
         flex-direction: column;
         justify-content: center;
     }
+    
+ }
    
-}
