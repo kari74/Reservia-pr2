@@ -48,8 +48,11 @@ body{
     justify-content: flex-end;
 }
 
+ a nav-item registration{
+    color: #0065fc;
+}
 h1{
-    font-size: 16px;
+    font-size: 16px bold;
 }
 
 p{
@@ -87,8 +90,9 @@ p{
     color: #0065fc;
 }
 .fa-map-marker-alt{
-    font-size: x-large;
+    font-size: small;
     background-color: lightgray;
+    padding:7px
 }
 
 .button-search,.imput-search:focus {
@@ -187,8 +191,8 @@ p{
 
 .hebergements h2{
     width: 100%;
-    margin: 40px;
-    font-size: 25px;
+    margin: 30px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -229,30 +233,31 @@ p{
     padding-right: 20px;
 	border-radius: 20px;
     flex-direction: column;
-    justify-content: space-evenly;
+    
 }
 
 .populaires h2{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    margin: 40px;
+    margin: 30px;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 }
 
 .pop{
     display: flex;
     border: solid 4px white;
-	width: 90%;
+    width: 90%;
+    height: 40%;
 	border-radius: 20px;
 	background-color: white;
-	margin-left: 50px;
-    margin: 30px;
-    justify-content: start;
+    margin: 20px;
+    justify-content: space-between;
     
 
 }
+
 
 .pop img{
     border-bottom-left-radius: 20px;
@@ -264,6 +269,16 @@ p{
     font-size: 14px;
 }
 
+ h3{
+     width: 100%;
+    margin: 30px;
+    font-size: 20px;
+    font-weight: bold;
+
+ }
+ .hebergements-wrapper .populaires a {
+     display: flex;
+ }
 .activites{
     background-color: white;
 	justify-content: space-between;
@@ -280,7 +295,7 @@ p{
     font-weight: bold;
     display: flex;
     justify-content: end;
-    margin: auto;
+    margin: 15px;
 }
 
 .activity1{
@@ -357,6 +372,7 @@ p{
     padding: 2px;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
+    
 
 }
 
@@ -405,6 +421,7 @@ p{
     border-top: 3px solid transparent;
     padding: 40px 20px;
     margin: 0px 10px;
+    text-decoration: none;
 }
 
 .nav-item-active, .nav-item:hover{
@@ -450,41 +467,179 @@ p{
     }
 }
 
-@media all and(max-width:850px){
+@media screen and (min-width: 482px) and (max-width:1024px){
 
-    .card{
-        width: 40%;
-    }
-
-    .header{
-        text-align: center;        
-        width: auto;
-    }
-
-    .show-on-mobile{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .filtre{
-    
-        width: 100%;   
-    }
-
-    .option{
-        display: flex;
-        justify-content: center;
-    }
-
-    .nav{
-        width: auto;
-    }
-
-    .icone{
-        display: none;
-    }
+  
+.card{
+    width: 40%;
+}
+.header{
+    text-align: start;        
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+.filtre{
+    width: auto;
+    font-size: 19px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 10px;
+
+}
+
+.icone{
+    display: none;
+
+}
+.nav{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    
+}
+
+.hide-on-mobile{
+    display: none;
+}
+
+.show-on-mobile{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item{
+    border-top: 3px solid transparent;
+    padding: 40px 20px;
+    margin: 0px 10px;
+}
+
+.nav-item-active, .nav-item:hover{
+    border-bottom: 3px solid #0065fc;
+    color: #0065fc;
+}
+
+
+h1{
+    font-size: 28px;
+    margin: 10px;
+}
+p{
+    font-size: 20px;
+    margin: 10px;
+}
+.filtre p{
+    font-size: 20px;
+    margin: 10px;
+    width: 80%;
+}
+
+.from{
+    display: flex;
+}
+
+.search{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 10px;
+    
+}
+
+.search .icone{
+    visibility: visible;
+    display: flex;
+ 
+
+}
+ .button-search{
+     display: none;
+ }
+
+ .search_form_submit_input_2{
+
+    display: flex;
+    border-radius: 20px;
+ }
+
+  button{
+    background-color: #0065fc ;
+    border-radius: 0px  30px  30px  0px;
+    margin-left: -5px;
+    height: 36px;
+    width: 50px;
+    border: solid 1px transparent;
+    color: white;
+  }  
+
+
+.hebergements-wrapper{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hebergements-multiple-cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px
+}
+
+.hebergements{
+    width: 100%;
+    background-color: white;
+    order: 2;
+}
+
+.card{
+    width: 40%;
+}
+
+.pop-cards{
+    width: 90%;
+}
+.pop-cards p {
+    font-size: 25px;
+}
+.pop{
+    width: 100%;
+}
+
+.populaires{
+    width: 100%;
+    order: 1;
+}
+
+.activites{
+  padding:20px;
+  flex-direction: column;    
+  justify-content: center;
+  width: 100%;
+}
+
+.activity4{
+    margin-right:25px
+}
+.footer-container{
+    flex-direction: column;
+    justify-content: center;
+}
+
+}
 
 @media all and (max-width: 480px){
 
@@ -496,29 +651,30 @@ p{
         justify-content: space-between;
     }
 
+   
     .logo {
         display: flex;
         justify-content: space-between;
     }
-
     .filtre{
         width: auto;
         font-size: 19px;
         flex-wrap: wrap;
         justify-content: flex-start;
         margin: 10px;
+
     }
 
     .icone{
         display: none;
-
+    
     }
-
     .nav{
         width: auto;
         display: flex;
         flex-wrap: wrap;
-        font-size: 18px;  
+        font-size: 18px;
+        
     }
 
     .hide-on-mobile{
@@ -546,17 +702,16 @@ p{
         border-bottom: 3px solid #0065fc;
         color: #0065fc;
     }
+    
 
     h1{
         font-size: 28px;
         margin: 10px;
     }
-
     p{
         font-size: 20px;
         margin: 10px;
     }
-
     .filtre p{
         font-size: 20px;
         margin: 10px;
@@ -578,8 +733,9 @@ p{
     .search .icone{
         visibility: visible;
         display: flex;
-    }
+     
 
+    }
      .button-search{
          display: none;
      }
@@ -609,6 +765,7 @@ p{
         width: 100%;
         display: flex;
         justify-content: center;
+        margin: 0px
     }
 
     .hebergements{
@@ -622,7 +779,7 @@ p{
     }
  
     .pop-cards{
-        width: 100%;
+        width: 90%;
     }
 
     .pop{
@@ -641,10 +798,12 @@ p{
       width: 100%;
     }
     
+    .activity4{
+        margin-right:25px
+    }
     .footer-container{
         flex-direction: column;
         justify-content: center;
     }
-    
- }
    
+}
