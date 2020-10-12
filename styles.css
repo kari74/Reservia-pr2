@@ -34,23 +34,41 @@ body{
     display: flex;
 }
 
-.nav{
-    background-color: white;
-    display: flex;
-    justify-content: flex-end;
-    align-self: center;
-    color: #0065fc;
-}
-
 .nav-wrapper{
 
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
- a nav-item registration{
+.header-nav{
+    border-bottom: #0065fc 3px solid;
+    color: #0065fc;
+    margin-bottom: 5px;
+    border-top: none;
+}
+
+.nav-item{
+    border-top: 3px solid transparent;
+    padding: 40px 20px;
+    margin: 0px 10px;
+    text-decoration: none;
     color: #0065fc;
 }
+
+.nav-item-active, .nav-item:hover{
+    border-top: 3px solid #0065fc;
+    
+}
+
+.hide-on-mobile{
+    display: flex;
+}
+
+.show-on-mobile{
+    display: none;
+}
+
 h1{
     font-size: 16px bold;
 }
@@ -89,10 +107,16 @@ p{
 .fa-star{
     color: #0065fc;
 }
-.fa-map-marker-alt{
-    font-size: small;
-    background-color: lightgray;
-    padding:7px
+
+.search-icon-wrapper{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: lightgrey;
+    padding: 7px;
 }
 
 .button-search,.imput-search:focus {
@@ -105,6 +129,7 @@ p{
     padding: 2%;
     background-color: #0065fc;
     color: #DEEBFF;
+   
 }
 
 .fa-search:before {
@@ -130,7 +155,6 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: raleway;
     width: 75%;
     font-weight: bold;
 }
@@ -140,14 +164,13 @@ p{
     font-weight: bold;
 }
 
-
-
 .option{
     background-color: white;
     border: #f2f2f2 2px solid;
     border-radius: 15px;
     padding-right: 5px;
     display: flex;
+    cursor: pointer;
 }
 
 .option:hover{
@@ -172,6 +195,7 @@ p{
 .hebergements-wrapper a{
     color: rgb(27, 27, 27);
     text-decoration: none;
+    width: 100%;
 }
 .hebergements{
     background-color: #f2f2f2;
@@ -190,7 +214,6 @@ p{
 }
 
 .hebergements h2{
-    width: 100%;
     margin: 30px;
     font-size: 20px;
     font-weight: bold;
@@ -247,7 +270,7 @@ p{
 
 .pop{
     display: flex;
-    border: solid 4px white;
+    border: 4px solid white;
     width: 90%;
     height: 40%;
 	border-radius: 20px;
@@ -270,8 +293,7 @@ p{
 }
 
  h3{
-     width: 100%;
-    margin: 30px;
+    margin: 20px;
     font-size: 20px;
     font-weight: bold;
 
@@ -289,6 +311,7 @@ p{
 
 .activites img{
     width: 100%;
+    height: 250px;
 }
 .lieux{
     font-size: 14px;
@@ -298,6 +321,10 @@ p{
     margin: 15px;
 }
 
+.activity{
+    width: 100%;
+   
+}
 .activity1{
     display: flex;
     background-color: white;
@@ -409,43 +436,12 @@ p{
     margin: 20px;
 }
 
-.header-nav{
-    border-bottom: #0065fc 3px solid;
-    color: #0065fc;
-    margin-bottom: 5px;
-    border-top: none;
-
-}
-
-.nav-item{
-    border-top: 3px solid transparent;
-    padding: 40px 20px;
-    margin: 0px 10px;
-    text-decoration: none;
-}
-
-.nav-item-active, .nav-item:hover{
-    border-top: 3px solid #0065fc;
-    color: #0065fc;
-}
-
-.hide-on-mobile{
-    display: flex;
-}
-
-.show-on-mobile{
-    display: none;
-}
-
 @media all and (max-width:1200px){
    
-    .hide-on-mobile{
-        display: none;
+    h1{
+        margin-top: 40px;
     }
 
-    .show-on-mobile{
-        display: flex;
-    }
     .header{
         text-align: center;
         width: auto;
@@ -458,6 +454,7 @@ p{
     .button-search{
         visibility: visible;
     }
+
     .from{
         display: flex;
     }
@@ -465,197 +462,42 @@ p{
     .card{
         width: 25%;
     }
-}
 
-@media screen and (min-width: 482px) and (max-width:1024px){
-
-  
-.card{
-    width: 40%;
-}
-.header{
-    text-align: start;        
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-.logo {
-    display: flex;
-    justify-content: space-between;
-}
-.filtre{
-    width: auto;
-    font-size: 19px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 10px;
+    .populaires h2{
+        align-self: normal;
+    }
 
 }
 
-.icone{
-    display: none;
+@media screen and (min-width: 482px) and (max-width: 930px){
 
-}
-.nav{
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 18px;
-    
-}
+    .hide-on-mobile{
+        display: none;
+    }
 
-.hide-on-mobile{
-    display: none;
-}
+    .show-on-mobile{
+        display: flex;
+    }
 
-.show-on-mobile{
-    display: flex;
-    justify-content: space-between;
-}
+    .nav{
+        border-bottom:3px solid #f2f2f2;
+    }
 
-.logo{
-    width: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-item{
-    border-top: 3px solid transparent;
-    padding: 40px 20px;
-    margin: 0px 10px;
-}
-
-.nav-item-active, .nav-item:hover{
-    border-bottom: 3px solid #0065fc;
-    color: #0065fc;
-}
-
-
-h1{
-    font-size: 28px;
-    margin: 10px;
-}
-p{
-    font-size: 20px;
-    margin: 10px;
-}
-.filtre p{
-    font-size: 20px;
-    margin: 10px;
-    width: 80%;
-}
-
-.from{
-    display: flex;
-}
-
-.search{
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    margin: 10px;
-    
-}
-
-.search .icone{
-    visibility: visible;
-    display: flex;
- 
-
-}
- .button-search{
-     display: none;
- }
-
- .search_form_submit_input_2{
-
-    display: flex;
-    border-radius: 20px;
- }
-
-  button{
-    background-color: #0065fc ;
-    border-radius: 0px  30px  30px  0px;
-    margin-left: -5px;
-    height: 36px;
-    width: 50px;
-    border: solid 1px transparent;
-    color: white;
-  }  
-
-
-.hebergements-wrapper{
-    flex-direction: column;
-    justify-content: center;
-}
-
-.hebergements-multiple-cards{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0px
-}
-
-.hebergements{
-    width: 100%;
-    background-color: white;
-    order: 2;
-}
-
-.card{
-    width: 40%;
-}
-
-.pop-cards{
-    width: 90%;
-}
-.pop-cards p {
-    font-size: 25px;
-}
-.pop{
-    width: 100%;
-}
-
-.populaires{
-    width: 100%;
-    order: 1;
-}
-
-.activites{
-  padding:20px;
-  flex-direction: column;    
-  justify-content: center;
-  width: 100%;
-}
-
-.activity4{
-    margin-right:25px
-}
-.footer-container{
-    flex-direction: column;
-    justify-content: center;
-}
-
-}
-
-@media all and (max-width: 480px){
-
+    .card{
+        width: 40%;
+    }
     .header{
         text-align: start;        
         width: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
     }
 
-   
     .logo {
         display: flex;
         justify-content: space-between;
     }
+
     .filtre{
         width: auto;
         font-size: 19px;
@@ -669,12 +511,181 @@ p{
         display: none;
     
     }
-    .nav{
+
+    .hide-on-mobile{
+        display: none;
+    }
+
+    .show-on-mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo{
         width: auto;
         display: flex;
+        justify-content: center;
+    }
+
+    .nav-item{
+
+        padding: 10px 20px;
+        margin: 0px 10px;
+    }
+
+    .nav-item-active, .nav-item:hover{
+        border-bottom: 3px solid #0065fc;
+        border-top: 3px solid transparent;
+        color: #0065fc;
+        margin-bottom: -3px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+    p{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .filtre p{
+        font-size: 20px;
+        margin: 10px;
+        width: 80%;
+    }
+
+    .option{
+        margin: 7px;
+    }
+
+    .from{
+        display: flex;
+    }
+
+    .search{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 10px;  
+    }
+
+    .search .icone{
+        visibility: visible;
+        display: flex;
+    }
+
+    .button-search{
+        display: none;
+    }
+
+    .search_form_submit_input_2{
+
+        display: flex;
+        border-radius: 20px;
+    }
+
+    button{
+        background-color: #0065fc ;
+        border-radius: 0px  30px  30px  0px;
+        margin-left: -5px;
+        height: 36px;
+        width: 50px;
+        border: solid 1px transparent;
+        color: white;
+        align-items: center;
+        justify-content: center;
+    }  
+
+    .hebergements-wrapper{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hebergements-multiple-cards{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0px
+    }
+
+    .hebergements{
+        width: 100%;
+        background-color: white;
+        order: 2;
+    }
+
+    .card{
+        width: 40%;
+    }
+
+    .pop-cards{
+        width: 90%;
+    }
+    .pop-cards p {
+        font-size: 20px;
+    }
+    .pop{
+        width: 90%;
+    }
+
+    .populaires{
+        width: 100%;
+        order: 1;
+        padding: 0px;
+        align-items: center;
+    }
+
+    .populaire h2{
+        align-self: normal;
+    }
+
+    .activites{
+    flex-direction: row;    
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    }
+
+    .activity1{
+        margin: 0px 0px 30px 0px;
+    }
+
+    .activity2{
+        margin: 0px 0px 30px 0px
+    }
+
+    .activity3{
+          margin:0px 0px 30px 0px;
+      }
+
+    .activites img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+@media all and (max-width: 480px){
+   
+    .filtre{
+        width: auto;
+        font-size: 19px;
         flex-wrap: wrap;
-        font-size: 18px;
-        
+        justify-content: flex-start;
+        margin: 10px;
+    }
+
+    .icone{
+        display: none;
+    }
+
+    .nav{
+      
+        border-bottom: 3px solid #f2f2f2;  
     }
 
     .hide-on-mobile{
@@ -686,27 +697,21 @@ p{
         justify-content: space-between;
     }
     
-    .logo{
-        width: auto;
-        display: flex;
-        justify-content: center;
-    }
-
     .nav-item{
-        border-top: 3px solid transparent;
-        padding: 40px 20px;
+        padding: 10px 20px;
         margin: 0px 10px;
     }
     
     .nav-item-active, .nav-item:hover{
         border-bottom: 3px solid #0065fc;
         color: #0065fc;
+        border-top: none;
+        margin-bottom: -3px;
     }
     
 
     h1{
         font-size: 28px;
-        margin: 10px;
     }
     p{
         font-size: 20px;
@@ -716,6 +721,10 @@ p{
         font-size: 20px;
         margin: 10px;
         width: 80%;
+    }
+
+    .option{
+        margin: 7px;   
     }
 
     .from{
@@ -733,9 +742,8 @@ p{
     .search .icone{
         visibility: visible;
         display: flex;
-     
-
     }
+
      .button-search{
          display: none;
      }
@@ -743,7 +751,7 @@ p{
      .search_form_submit_input_2{
 
         display: flex;
-        border-radius: 20px;
+        border-radius: 10px;
      }
 
       button{
@@ -754,8 +762,10 @@ p{
         width: 50px;
         border: solid 1px transparent;
         color: white;
+        align-items: center;
+        justify-content: center;
       }  
-
+      
     .hebergements-wrapper{
         flex-direction: column;
         justify-content: center;
@@ -783,24 +793,37 @@ p{
     }
 
     .pop{
-        width: 100%;
+        width: 90%;
     }
 
     .populaires{
         width: 100%;
         order: 1;
+        padding: 0px;
+        align-items: center;
     }
 
   .activites{
-      padding:20px;
       flex-direction: column;    
       justify-content: center;
       width: 100%;
     }
     
-    .activity4{
-        margin-right:25px
+    .activites img {
+        width: 100%;
+        height: 250px;
     }
+
+    .activity1{
+        margin: 0px 0px 30px 0px;
+    }
+
+    .activity2{
+        margin: 0px 0px 30px 0px
+    }
+      .activity3{
+          margin:0px 0px 30px 0px;
+      }
     .footer-container{
         flex-direction: column;
         justify-content: center;
