@@ -10,22 +10,24 @@
     <body>
         <div class="container">
             <!--debut header-->
-            <div class="header">
-                <div class="logo">
-                    <img src="logo/Reservia.svg" alt="logo">
-                </div>
-                <div class="nav-wrapper">
-                    <div class="nav hide-on-mobile">
+            <header>
+                <div class="header">
+                    <div class="logo">
+                        <img src="logo/Reservia.svg" alt="logo">
+                    </div>
+                    <div class="nav-wrapper">
+                        <div class="nav hide-on-mobile">
+                            <a class="nav-item nav-item-active" href="#hebergements">Hébergements</a>
+                            <a class="nav-item" href="#activites">Activités</a>
+                        </div>
+                            <a class="nav-item registration" href="#inscrire">S'inscrire</a>
+                        </div>
+                    </div>
+                    <div class="nav show-on-mobile">
                         <a class="nav-item nav-item-active" href="#hebergements">Hébergements</a>
                         <a class="nav-item" href="#activites">Activités</a>
                     </div>
-                        <a class="nav-item registration" href="#inscrire">S'inscrire</a>
-                    </div>
-                </div>
-                <div class="nav show-on-mobile">
-                    <a class="nav-item nav-item-active" href="#hebergements">Hébergements</a>
-                    <a class="nav-item" href="#activites">Activités</a>
-                </div>
+                </header> 
             <!--fin header-->
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ou en peine nature</p>
@@ -58,7 +60,7 @@
 				</div>
 				<div class="option">
                     <i class="fas fa-child icone"></i>
-                    Familiale
+                    Familial
 				</div>
 				<div class="option">
                     <i class="fas fa-heart icone"></i>
@@ -164,33 +166,39 @@
                     <div class="pop-cards">
                         <div class="pop">
                             <a href="hotelsoleildumatin">
-                                <img src="hebergements/4_small/hotelsoleildumatin.jpg" alt="hotel soleil du matin">
-                                <p>
-                                    <strong>Hôtel Le Soleil du matin </strong><br>Nuit à partir de 128€<br>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </p>
-                            </a>
+                                <div class="pop1"> 
+                                    <img src="hebergements/4_small/hotelsoleildumatin.jpg" alt="hotel soleil du matin">
+                                </div>
+                                    <p>
+                                        <strong>Hôtel Le Soleil du matin </strong><br>Nuit à partir de 128€<br>
+                                        <i class="fas fa-star bleu"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </p>
+                                </a>
                         </div>
                         <div class="pop">
                             <a href="aucoeurdeleau">
-                                <img src="hebergements/4_small/aucoeurdeleau.jpg" alt="au coeur de l'eau">
-                                <p>
-                                    <strong>Au Coeur de l'eau<br> Chambre d'Hôtes</strong><br>Nuit à partir de 71€<br>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>   
-                                </p>
-                            </a>
+                                <div class="pop2">
+                                    <img src="hebergements/4_small/aucoeurdeleau.jpg" alt="au coeur de l'eau">
+                                </div>       
+                                    <p>
+                                        <strong>Au Coeur de l'eau<br> Chambre d'Hôtes</strong><br>Nuit à partir de 71€<br>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>   
+                                    </p>
+                                </a>
                         </div>
                         <div class="pop">
                             <a href="hotelbleuetblanc1">
-                                <img src="hebergements/4_small/hotelbleuetblanc1.png" alt="hotel bleu et blanc">
+                                <div class="pop3">
+                                    <img src="hebergements/4_small/hotelbleuetblanc1.png" alt="hotel bleu et blanc">
+                                </div>
                                 <p>
                                     <strong>Hôtel Tout bleu et Blanc </strong><br>Nuit à partir de 68€<br>
                                 <i class="fas fa-star"></i>
@@ -209,59 +217,75 @@
             <h3>Activités à Marseille</h3>
             <div class="activites" id="activites">
                 <div class="activity1">
-                    <img src="actvités/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
+                    <img src="actvités/4_small/vieuxport.jpg" alt="vieux port">
                     <div class="lieux">
-                        Vieux Port
+                        <p>
+                            Vieux Port
+                        </p>
                     </div>
                 </div>
                 <div class="activity2">
-                    <img src="actvités/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort de pomègues">
+                    <img src="actvités/4_small/fortpomegues.jpg" alt="fort de pomègues">
                     <div class="lieux">
-                        Fort de Pomègues
+                        <p>
+                            Fort de pomègues
+                        </p>
                     </div>
-                    <img src="actvités/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="iles de frioul">
+                    <img src="actvités/4_small/iledefrioul.jpg" alt="iles de frioul">
                     <div class="lieux">
-                        îles de Frioul
+                        <p>
+                            îles de Frioul
+                        </p>
                     </div>
                 </div>
                 <div class="activity3">
-                    <img src="actvités/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="les calanques">
+                    <img src="actvités/4_small/calanques.jpg" alt="les calanques">
                     <div class="lieux">
-                    Parc national des Calanques
+                        <p>
+                            Parc national des Calanques
+                        </p>
                     </div>
                 </div>
                 <div class="activity4">
-                    <img src="actvités/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-De-La-Garde">
+                    <img src="actvités/4_small/notre-dame-de-la-garde.jpg" alt="Notre-Dame-De-La-Garde">
                     <div class="lieux">
-                        Notre-Dame-De-La-Garde
+                        <p>
+                            Notre-Dame-De-La-Garde
+                        </p>
                     </div>
-                    <img src="actvités/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parc longchamps">
+                    <img src="actvités/4_small/parclongchamps.jpg" alt="parc longchamps">
                     <div class="lieux">
-                        Parc Longchamps
+                        <p>
+                            Parc Longchamps
+                        </p>
                     </div>
                 </div>
             </div>
             <!--fin section activités-->
         </div>
         <!--debut footer-->
-        <div class="footer">
+        <footer class="footer">
             <div class="footer-container">
                 <div class="propos">
-                    <strong>A propos</strong><br>
+                    <a href="#"><strong>A propos</strong><br></a>
                     <p>
-                        Fonctionnement du site<br/>Conditions générales de vente<br>Données de confidentialité<br>
+                        <a href="#">Fonctionnement du site</a><br>
+                        <a href="#">Conditions générales de vente</a><br>
+                        <a href="#">Données de confidentialité</a>
                     </p>		
                  </div>
                  <div class="noshebergements">
-                    <strong>Nos hébergements</strong><br>
+                    <a href="#"><strong>Nos hébergements</strong><br></a>
                     <p>
-                        Charte qualité<br>Soumetttre votre hôtel
+                        <a href="#">Charte qualité</a><br>
+                        <a href="#">Soumetttre votre hôtel</a>
                     </p>
                 </div>
                 <div class="assistance">
-                    <strong>Assistance</strong><br>
+                    <a href="#"><strong>Assistance</strong><br></a>
                     <p>
-                         Centre d'aide<br>Nous Contacter
+                         <a href="#">Centre d'aide</a><br>
+                         <a href="#">Nous Contacter</a>
                     </p>
                 </div>
             </div>
