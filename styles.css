@@ -346,12 +346,12 @@ p{
 }
 
 .activity1{
-    background: url(activités/4_small/vieuxport.jpg) center;
+    background: center;
     background-size: cover;
 }
 
 .activity3{
-    background: url(activités/4_small/calanques.jpg) center;
+    background: center;
     background-size: cover;
 }
 
