@@ -328,6 +328,7 @@ p{
 
 .activity{
     width: 100%; 
+
 }
 
 .activity1,.activity3{
@@ -346,12 +347,12 @@ p{
 }
 
 .activity1{
-    background: center;
+    background: url(activités/4_small/vieuxport.jpg) center;
     background-size: cover;
 }
 
 .activity3{
-    background: center;
+    background: url(activités/4_small/calanques.jpg) center;
     background-size: cover;
 }
 
@@ -376,6 +377,37 @@ p{
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
 
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-a{
+    background-image: url('images/activites/vieuxport.jpg');
+}
+
+.image-b{
+    background-image: url('images/activites/fortpomegues.jpg');
+}
+
+.image-c{
+    background-image: url('images/activites/iledefrioul.jpg');
+}
+
+.image-d{
+    background-image: url('images/activites/calanques');
+}
+
+.image-e{
+    background-image: url('images/activites/notre-dame-de-la-garde.jpg');
+}
+
+.image-f{
+    background-image: url('images/activites/parclongchamps.jpg');
 }
 
 .footer{
@@ -627,7 +659,13 @@ p a{
         width: 100%;
         height: 250px;
     }
-
+    .image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    
     .footer-container{
         flex-direction: column;
         justify-content: center;
@@ -666,6 +704,7 @@ p a{
     .nav-item{
         padding: 10px 20px;
         margin: 0px 10px;
+        border-top: unset;
     }
     
     .nav-item-active, .nav-item:hover{
@@ -762,7 +801,7 @@ p a{
         width: 90%;
     }
 
-    .populaires{
+       .populaires{
         width: 100%;
         order: 1;
         padding: 0px;
