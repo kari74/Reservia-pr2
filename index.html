@@ -14,21 +14,21 @@
             <header>
                 <div class="header">
                     <div class="logo">
-                        <img src="images/logo/Reservia.svg" alt="logo">
+                        <img src="images/logo/Reservia.svg" alt="logo"/>
                     </div>
-                    <div class="nav-wrapper">
-                        <div class="nav hide-on-mobile">
+                <nav class="nav-wrapper">
+                    <div class="nav hide-on-mobile">
                             <a class="nav-item nav-item-active" href="#hebergements">Hébergements</a>
                             <a class="nav-item" href="#activites">Activités</a>
-                        </div>
-                            <a class="nav-item registration" href="#inscrire">S'inscrire</a>
-                        </div>
+                    </div>
+                        <a class="nav-item registration" href="#inscrire">S'inscrire</a>
                     </div>
                     <div class="nav show-on-mobile">
                         <a class="nav-item nav-item-active" href="#hebergements">Hébergements</a>
                         <a class="nav-item" href="#activites">Activités</a>
                     </div>
-                </header> 
+                </nav>
+            </header> 
             <!--fin header-->
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ou en peine nature</p>
@@ -40,7 +40,8 @@
                         <i class="fas fa-map-marker-alt"></i>
                         </span>
                         <input class="search_form_text_input" type="text" name="research" id="research" placeholder="Marseille, France">
-                        <input type="button" value="Rechercher" class="button-search"><button class="search_form_submit_input_2" type="submit">
+                        <button class="button-search" type="submit">Rechercher</button>
+                        <button class="search_form_submit_input_2" type="submit">
                             <i class="fas fa-search"></i>
                         </button>
                         
@@ -52,25 +53,25 @@
             <!--debut section filtre-->
             <section class="filtre">
                 <p>
-					Filtres
+                    <span>Filtres</span>
 				</p>
 				
-				<button class="option">
+				<div class="option">
                     <i class="fas fa-money-bill-wave icone"></i>
-                    Economique
-                </button>
-				<button class="option">
+                    <a href="#">Economique</a>
+                </div>
+				<div class="option">
                     <i class="fas fa-child icone"></i>
-                    Familial
-				</button>
-				<button class="option">
+                    <a href="#">Familial</a>
+                </div>
+				<div class="option">
                     <i class="fas fa-heart icone"></i>
-                    Romantique
-                </button>
-				<button class="option">
+                    <a href="#">Romantique</a>
+                </div>
+				<div class="option">
                     <i class="fas fa-dog icone"></i>
-                    Animaux autorisés
-				</button>
+                    <a href="#">Animaux autorisés</a>
+                </div>
             </section>
             <!--fin section filtre-->
             <p>
@@ -218,7 +219,7 @@
             <h3>Activités à Marseille</h3>
             <section class="activites" id="activites">
                 <div class="activity activity1">
-                    <div class="image image-a"></div>
+                    <a href="vieuxport" class="image image-a" style="background-image: url(images/activites/vieuxport.jpg)"></a>
 
                     <div class="lieux">
                         <p>
@@ -227,13 +228,13 @@
                     </div>
                 </div>
                 <div class="activity activity2">
-                    <div class=" image image-b"></div>
+                    <a href="fortpomegues" class=" image image-b" style="background-image: url(images/activites/fortpomegues.jpg)"></a>
                     <div class="lieux">
                         <p>
                             Fort de pomègues
                         </p>
                     </div>
-                    <div class="image image-c"></div>
+                    <a href="ilesfrioul" class="image image-c" style="background-image: url(images/activites/iledefrioul.jpg)"></a>
                     <div class="lieux">
                         <p>
                             îles de Frioul
@@ -241,7 +242,7 @@
                     </div>
                 </div>
                 <div class="activity activity3">
-                    <div class="image image-d"></div>
+                    <a href="calanques" class="image image-d" style="background-image: url(images/activites/calanques.jpg)"></a>
                     <div class="lieux">
                         <p>
                             Parc national des Calanques
@@ -249,13 +250,13 @@
                     </div>
                 </div>
                 <div class="activity activity4">
-                    <div class="image image-e"></div>
+                    <a href="damedelagarde" class="image image-e" style="background-image: url(images/activites/notre-dame-de-la-garde.jpg)"></a>
                     <div class="lieux">
                         <p>
                             Notre-Dame-De-La-Garde
                         </p>
                     </div>
-                    <div class="image image-f"></div>
+                    <a href="parclonchamps" class="image image-f" style="background-image:url(images/activites/parclongchamps.jpg)"></a>
                     <div class="lieux">
                         <p>
                             Parc Longchamps
