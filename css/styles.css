@@ -152,20 +152,24 @@ p{
     font-weight: bold;
 }
 
-.filtre p{
+.filtre p span{
     font-size: 14px;
     font-weight: bold;
 }
 
-.option{
+  .option{
     background-color: white;
     border: #f2f2f2 2px solid;
     border-radius: 15px;
     padding-right: 5px;
     display: flex;
-    cursor: pointer;
     align-items: center;
 }
+
+.option a{
+    text-decoration: none;
+    color:black;
+} 
 
 .option:hover{
     background-color: lightskyblue;
@@ -295,7 +299,7 @@ p{
     margin: 20px;
     font-size: 20px;
     font-weight: bold;
-
+    display: flex;
  }
 
  .hebergements-wrapper .populaires a {
@@ -308,11 +312,6 @@ p{
     display: flex;
     margin:0px 20px 20px 0px;
 	width: 100%;
-}
-
-.activites img{
-    width: 100%;
-    height: 250px;
 }
 
 .lieux{
@@ -328,7 +327,12 @@ p{
 
 .activity{
     width: 100%; 
+    height: 100%;
 
+}
+
+.activity2, .activity3{
+    margin: 0px 30px 30px 0px;
 }
 
 .activity1,.activity3{
@@ -336,35 +340,13 @@ p{
     background-color: white;
     justify-content:  stretch;
     border-radius: 40px;
-    margin: 0px 30px 0px 30px;
-    height: auto;
+    margin: 0px 30px 30px 0px;
     box-shadow: 6px 6px 6px #f2f2f2;
     flex-direction: column;
     padding: 2px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 
-}
-
-.activity1{
-    background: url(activités/4_small/vieuxport.jpg) center;
-    background-size: cover;
-}
-
-.activity3{
-    background: url(activités/4_small/calanques.jpg) center;
-    background-size: cover;
-}
-
-.activity1 img, .activity3 img { 
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    height: 92%;
-}
-
-.activity2 img, .activity4 img{
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
 }
 
 .activity4,.activity2{
@@ -376,38 +358,57 @@ p{
     padding: 2px;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
+   
 
-}
-
-.image {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
 }
 
 .image-a{
-    background-image: url('images/activites/vieuxport.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 650px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
 .image-b{
-    background-image: url('images/activites/fortpomegues.jpg');
+    background-size: cover;
+    height: 290px;
+    background-position: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
 .image-c{
-    background-image: url('images/activites/iledefrioul.jpg');
+    background-size: cover;
+    height: 285px;
+    background-position: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
 .image-d{
-    background-image: url('images/activites/calanques');
+    background-size: cover;
+    height: 650px;
+    background-position: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
 .image-e{
-    background-image: url('images/activites/notre-dame-de-la-garde.jpg');
+    background-size: cover;
+    height: 285px;
+    background-position: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
 .image-f{
-    background-image: url('images/activites/parclongchamps.jpg');
+    background-size: cover;
+    height: 290px;
+    background-position: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
 .footer{
@@ -651,18 +652,13 @@ p a{
     width: 100%;
     }
 
-    .activity1, .activity2, .activity3{
+    .activity1, .activity2, .activity3, .activity4{
         margin: 0px 0px 30px 0px;
     }
 
-    .activites img {
+    .activites .image {
         width: 100%;
         height: 250px;
-    }
-    .image {
-        width: 100%;
-        height: 100%;
-        background-size: cover;
         background-position: center;
     }
     
@@ -814,18 +810,36 @@ p a{
       width: 100%;
     }
     
-    .activites img {
+    .activity .image-b, .image-c, .image-e, .image-f {
         width: 100%;
         height: 250px;
+        background-size: cover;
+        background-position: center;  
     }
+    
 
     .activity1, .activity2, .activity3{
         margin: 0px 0px 30px 0px;
     }
+    
+
+    .image-a{
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 250px;
+    }
+
+    .image-d{
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 250px;
+    }
 
     .footer-container{
+        display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-   
+    } 
 }
