@@ -56,8 +56,12 @@ body{
     color: black;
 }
 
-.nav-item-registration{
+.nav-item-registration,.nav-item-registration:hover{
     color: #0065fc;
+    border-top: 3px solid transparent;
+    padding: 40px 20px;
+    margin: 0px 10px;
+    text-decoration: none;
 }
 
 .nav-item-active, .nav-item:hover{
@@ -115,6 +119,9 @@ p{
     color: #0065fc;
 }
 
+.far{
+    color: lightgrey;
+}
 .search-icon-wrapper{
     width: 30px;
     display: flex;
@@ -159,8 +166,8 @@ p{
     font-weight: bold;
 }
 
-.filtre p span{
-    font-size: 14px;
+h4{
+    font-size: 16px;
     font-weight: bold;
 }
 
