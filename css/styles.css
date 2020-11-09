@@ -17,7 +17,7 @@ body{
 
 .container{
     background-color: white;
-    max-width: 1200px;
+    max-width: 1300px;
     padding: 0px 15px;
 }
 
@@ -220,7 +220,7 @@ h4{
 }
 
 .hebergements-multiple-cards{
-    margin: 40px;
+    margin: 20px;
     display: flex;
     flex: 1 1 0%;
     flex-wrap: wrap;
@@ -239,7 +239,8 @@ h4{
 }
 
 .card{
-    width: 25%;
+    width: 30%;
+    height: 200px;
     border: solid 5px white;
     border-radius: 40px;
     background-color: white;
@@ -255,6 +256,7 @@ h4{
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     width: 100%;
+    height: 110px;
 }
 
 .card p{
@@ -284,10 +286,11 @@ h4{
     display: flex;
     border: 4px solid white;
     width: 90%;
+    height: 130px;
 	border-radius: 20px;
 	background-color: white;
     margin: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     justify-content: space-between;
 }
 
@@ -385,8 +388,8 @@ a{
 .image-vieuxport{
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 620px;
+    width: 300;
+    height: 500px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background-image: url(../images/activites/vieuxport.jpg);
@@ -394,7 +397,8 @@ a{
 
 .image-fortpomegues{
     background-size: cover;
-    height: 330px;
+    height: 280px;
+    width: 300px;
     background-position: center;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -403,7 +407,8 @@ a{
 
 .image-ilesfrioul{
     background-size: cover;
-    height: 275px;
+    height: 200px;
+    width: 300px;
     background-position: center;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -412,7 +417,8 @@ a{
 
 .image-calanques{
     background-size: cover;
-    height: 620px;
+    height: 500px;
+    width: 300px;
     background-position: center;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -421,7 +427,8 @@ a{
 
 .image-notredame{
     background-size: cover;
-    height: 300px;
+    height: 250px;
+    width: 300px;
     background-position: center;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -430,7 +437,8 @@ a{
 
 .image-longchamps{
     background-size: cover;
-    height: 300px;
+    height: 235px;
+    width: 300px;
     background-position: center;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -807,7 +815,7 @@ li{
         width: 100%;
         display: flex;
         justify-content: center;
-        margin: 0px
+        margin: 0px 10px 10px 0px;
     }
 
     .hebergements{
@@ -825,7 +833,8 @@ li{
     }
 
     .pop{
-        width: 90%;
+        width: 97%;
+        margin: 15px 30px 30px 0px;
     }
 
        .populaires{
@@ -847,13 +856,13 @@ li{
 
     .activites .image{
     width: 100%;
-    height: 250px;
+    height: 150px;
     background-position: center;
 }
     
-    .activity .image-b, .image-c, .image-e, .image-f {
+    .activity .image-fortpomegues, .image-ilesfrioul, .image-notredame, .image-longchamps {
         width: 100%;
-        height: 250px;
+        height: 160px;
         background-size: cover;
         background-position: center;  
     }
@@ -864,14 +873,14 @@ li{
     }
     
 
-    .image-a{
+    .image-image-vieuxport{
         background-size: cover;
         background-position: center;
         width: 100%;
         height: 250px;
     }
 
-    .image-d{
+    .image-calanques{
         background-size: cover;
         background-position: center;
         width: 100%;
